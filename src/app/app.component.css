@@ -1,0 +1,15 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons #btn-1,
+#btn-2,
+#btn-3,
+#btn-4 {
+  border-radius: 8px;
+  margin: 2px;
+  border: solid grey;
+  background-color: black;
+  color: rgb(241, 237, 237);
+}

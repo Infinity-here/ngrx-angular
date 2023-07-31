@@ -1,0 +1,8 @@
+<h2>Task Done</h2>
+<div class="tododone">
+  <ul *ngFor="let item of tododonetasks">
+    <li *ngIf="item.status">
+      {{ item.name }}
+    </li>
+  </ul>
+</div>

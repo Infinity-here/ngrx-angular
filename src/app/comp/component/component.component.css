@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border-radius: 10px;
+  background-color: rgb(97, 172, 172);
+  border: none;
+  margin: 2px;
+}
+#list {
+  display: flex;
+}
+
+.cantainer {
+  border: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tasklist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

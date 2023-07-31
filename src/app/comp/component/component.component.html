@@ -1,0 +1,27 @@
+<div *ngIf="show">
+  <ul *ngFor="let user of users">
+    <li style="list-style: none">{{ user.id }}:---{{ user.title }}</li>
+  </ul>
+</div>
+
+<div id="todo-cantainer">
+  <div class="cantainer">
+    <h2>Todo List Tasks</h2>
+    <input
+      type="text "
+      placeholder="Enter your task here"
+      [(ngModel)]="tasktobedone"
+      #task
+    />
+    <button (click)="addtasks()">Add Task</button>
+  </div>
+
+  <div class="tasklist">
+    <ul *ngFor="let item of todotasks" id="list">
+      <li>{{ item.name }}</li>
+      <button (click)="removetasks(item.id)" id="remove">Remove</button>
+      <button (click)="donetasks(item.id)" id="done">done</button>
+      <button (click)="edittasks(item.id)" id="edit">edit</button>
+    </ul>
+  </div>
+</div>
